@@ -1,13 +1,12 @@
 {% extends 'layouts/default.njk' %}
 {% from "partials/card.njk" import card %}
-{% from "partials/podcast-header.njk" import podcast_header %}
 
 
 {% set title = tag.name %}
 
 {% block content %}
     {% if tag.slug == 'podcast' %}
-        {{ podcast_header(tag) }}
+        {% include "partials/podcast-header.njk" %}
     {% else %}
     <header class="tag-header">
         <h1>{{ tag.name }}</h1>
