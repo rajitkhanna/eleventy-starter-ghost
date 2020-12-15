@@ -143,7 +143,7 @@ module.exports = function(config) {
       author.url = stripDomain(author.url);
     });
 
-    return collection.filter(post => post.primary_tag.slug != 'podcast');
+    return collection;
   });
 
   // Get all tags
