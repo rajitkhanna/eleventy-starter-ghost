@@ -107,7 +107,7 @@ module.exports = function(config) {
 
     // Bring featured post to the top of the list
     // collection.sort((post, nextPost) => nextPost.featured - post.featured);
-    collection.forEach(post => console.log(post.primary_tag));
+    // collection.forEach(post => console.log(post.primary_tag));
 
     return collection;
   });
