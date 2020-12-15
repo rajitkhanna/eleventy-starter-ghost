@@ -1,7 +1,8 @@
+{% macro special_tag(tag) %}
 
 <header class="author-header">
     <div class="author-header-content">
-        <h1>{{ author.name }}</h1>
+        <h1>{{ tag.name }}</h1>
         <p>{{ content | safe }}</p>
             <div class="author-header-meta">
                 <a class="author-header-item" href="https://anchor.fm/rajitk" target="_blank" rel="noopener noreferrer">Anchor</a>
@@ -10,9 +11,7 @@
                 <a class="author-header-item" href="https://www.instagram.com/rajitshow/" target="_blank" rel="noopener noreferrer">Instagram</a>
             </div>
     </div>
-    <!--
     <div class="author-header-image">
         <img src="{{ tag.feature_image }}" alt="{{ tag.name }}">
     </div>
-    -->
 </header>
