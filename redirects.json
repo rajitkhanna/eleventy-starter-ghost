@@ -1,0 +1,7 @@
+[
+  {
+    "from": "^\/(?!content/images)(.*)",
+    "to": "https://externalsite.com/$1",
+    "permanent": true
+  }
+]
