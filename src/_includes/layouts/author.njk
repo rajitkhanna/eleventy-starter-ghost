@@ -9,7 +9,7 @@
     <section class="post-feed">
         {% if author.posts %}
             {% for post in author.posts %}
-                {% if post.feature_image and post.tags | first != 'podcast' %}
+                {% if post.feature_image and post.tag != 'podcast' %}
                     {{ card(post) }}
                 {% endif %}
             {% endfor %}
