@@ -107,7 +107,7 @@ module.exports = function(config) {
 
     // Bring featured post to the top of the list
     // collection.sort((post, nextPost) => nextPost.featured - post.featured);
-    collection.forEach(post => console.log(post.primary_tag));
+    // collection.forEach(post => console.log(post.primary_tag));
 
     return collection;
   });
@@ -141,6 +141,10 @@ module.exports = function(config) {
       if (authorsPosts.length) author.posts = authorsPosts;
 
       author.url = stripDomain(author.url);
+    });
+    
+    collection.forEach(author => {
+      posts.forEach(post => console.log(post));
     });
 
     return collection;
