@@ -10,7 +10,9 @@
         {% if author.posts %}
             {% for post in author.posts %}
                 {% if post.feature_image %}
-                    {{ card(post) }}
+                    {% if post.primary_tag.slug != 'podcast %}
+                        {{ card(post) }}
+                    {% endif %}
                 {% endif %}
             {% endfor %}
         {% else %}
