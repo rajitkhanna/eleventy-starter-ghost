@@ -142,10 +142,11 @@ module.exports = function(config) {
 
       author.url = stripDomain(author.url);
     });
-    
+    /*
     collection.forEach(author => {
       posts.forEach(post => console.log(post));
     });
+    */
 
     return collection;
   });
