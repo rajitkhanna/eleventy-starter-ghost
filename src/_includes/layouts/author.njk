@@ -9,7 +9,8 @@
     <section class="post-feed">
         {% if author.posts %}
             {% for post in author.posts %}
-                {% if post.feature_image and post.tag != 'podcast' %}
+                {% set regExp = /^Ep.*/ %}
+                {% if post.feature_image and not regExp.test(post.title) %}
                     {{ card(post) }}
                 {% endif %}
             {% endfor %}
