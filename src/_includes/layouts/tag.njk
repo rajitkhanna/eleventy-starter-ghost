@@ -7,6 +7,8 @@
 {% block content %}
     {% if tag.slug == 'podcast' %}
         {% include "partials/podcast-header.njk" %}
+    {% elif tag.slug == 'book' %}
+        {% include "partials/book-header.njk" %}
     {% else %}
     <header class="tag-header">
         <h1>{{ tag.name }}</h1>
